@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    font-family:monospace;
+    margin: 3px;   
+}
+body{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 11px;
+    width: 22%;
+    margin: auto;
+    box-shadow: 0px 2px 5px 5px #0000003d;
+    overflow: hidden;
+}
+
+.container img{
+    width: 100%;
+    height: 28vh;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin: 0px;
+    background-color: #c1bbbbd6;
+}
+
+
+h3,span,p{
+    background-color: #c1bbbbd6;
+}
+
+.explain{
+    text-align: center;
+}
+.explain h3{
+    align-items: center;
+    margin: auto;
+    width: 98%;
+    height: 4vh;
+}
+.explain h1{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 65vh;
+    width: 2rem;
+    overflow: hidden;
+    /* border-radius: 50%; */
+    backdrop-filter:blur(3);
+    background-color: #4e4a4a0f;
+    backdrop-filter: brightness(3);
+    box-shadow: 5px 5px 10px 10px white;
+    opacity: 0.2;
+    animation: movement 0.75s linear;
+    animation-iteration-count: infinite;
+    transition: display 0.2s;
+}
+
+@keyframes movement {
+    100%{
+        left: 100%;
+    }
+}
+
+.writer{
+    display: flex;
+}
+.writer img{
+    margin-right: 12px;
+}
+
+div p{
+    height: 12vh;
+    padding: 7px;
+    text-align: justify;
+
+}
+.writer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.writer{
+    text-align: left;
+}
+
+.writerInfo{
+    display: flex;
+    flex-direction: column;
+}
+.writerInfo h3, .writerInfo span{
+    text-align: center;
+    display: inline-block;
+    width: 8rem;
+    height: 3vh;
+}
+.writerInfo span{
+    height: 2.5vh;
+}
+
